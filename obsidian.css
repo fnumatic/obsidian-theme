@@ -442,12 +442,6 @@ Add the correct display in Chrome and Safari.
   white-space: normal;
 }
 
-/* Indent wrapped nav text */
-
-.nav-file-title-content {
-  margin-left: 1rem; text-indent: -4rem;
-}
-
 /* The name of the vault */
 
 .nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {

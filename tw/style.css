@@ -154,10 +154,7 @@
     @apply whitespace-normal;
 }
 
-/* Indent wrapped nav text */
-.nav-file-title-content {
-    @apply ml-4 -indent-lg;
-}
+
   
   
   
