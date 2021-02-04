@@ -283,7 +283,7 @@ Add the correct display in Chrome and Safari.
   --tw-ring-shadow: 0 0 #0000;
 }
 
-:root{
+:root {
   --red-700: rgb(185, 28, 28);
   --gray-100: rgb(244, 244, 245);
   --gray-300: rgb(212, 212, 216);
@@ -295,11 +295,10 @@ Add the correct display in Chrome and Safari.
   --green-400: rgb(74, 222, 128);
 }
 
-.theme-light
-  {
+.theme-light {
   --background-inline-code: var(--gray-100);
   --background-primary: var(--gray-50);
-  --background-tag:var(--gray-400);
+  --background-tag: var(--gray-400);
   --border-inline-code: var(--gray-300);
   --code-block-background: var(--gray-100);
   --code-block-border: var(--gray-300);
@@ -393,17 +392,18 @@ Add the correct display in Chrome and Safari.
 }
 
 .nav-file-title-content {
-  margin-left: 2rem; text-indent: -2rem;
+  margin-left: 2rem;
+  text-indent: -2rem;
 }
 
-.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+.nav-folder.mod-root>.nav-file-title, .nav-folder.mod-root>.nav-folder-title {
   --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity))
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 
 .nav-file-title, .nav-folder-title {
   --tw-text-opacity: 1;
-  color: rgba(156, 163, 175, var(--tw-text-opacity))
+  color: rgba(156, 163, 175, var(--tw-text-opacity));
 }
 
 .cm-s-obsidian span.cm-url {
@@ -444,13 +444,15 @@ Add the correct display in Chrome and Safari.
 
 /* The name of the vault */
 
-.nav-folder.mod-root > .nav-file-title, .nav-folder.mod-root > .nav-folder-title {
+.nav-folder.mod-root>.nav-file-title,
+.nav-folder.mod-root>.nav-folder-title {
   color: var(--text-nav);
 }
 
 /* Color of left nav tree text */
 
-.nav-file-title, .nav-folder-title {
+.nav-file-title,
+.nav-folder-title {
   color: var(--text-nav);
 }
 
@@ -476,7 +478,7 @@ Add the correct display in Chrome and Safari.
 
 .side-dock.mod-left {
   border-right-width: 1px;
-  border-color: 1px solid var(--background-secondary-border);
+  border-color: var(--background-secondary-border);
 }
 
 /* Font adjustments for pane headers */
@@ -509,22 +511,24 @@ div.markdown-preview-view {
 /* Coloring the list bullets/numbers */
 
 .cm-s-obsidian span.cm-formatting-list {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgba(185, 28, 28, var(--tw-text-opacity));
-  font-size: 0.85em;
-  font-weight: 500;
   font-family: var(--font-monospace);
 }
 
 /* Editor view - task list, color and veritcal align */
 
 .cm-s-obsidian span.cm-formatting-task {
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  position: relative;
+  top: -0.125rem;
   --tw-text-opacity: 1;
   color: rgba(185, 28, 28, var(--tw-text-opacity));
-  font-size: 0.85em;
-  font-weight: 500;
-  position: relative;
-  top: -0.12em;
 }
 
 /* Preview Checkboxes don't seem to align correctly */
@@ -573,7 +577,7 @@ div.markdown-preview-view {
 }
 
 .cm-s-obsidian span.cm-inline-code:not(.cm-formatting):not(.cm-hmd-indented-code),
-  .markdown-preview-section code {
+.markdown-preview-section code {
   background-color: var(--background-inline-code);
   color: var(--text-inline-code);
 }
@@ -612,7 +616,7 @@ div.markdown-preview-view {
   border-bottom-right-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   border-bottom-width: 1px;
-  border-color:  var(--code-block-border);
+  border-color: var(--code-block-border);
 }
 
 /* Code block background color */
@@ -657,8 +661,10 @@ div.markdown-preview-view {
   white-space: pre-wrap;
 }
 
-.theme-light code[class*="language-"], .theme-light pre[class*="language-"],
-  .theme-dark code[class*="language-"], .theme-dark pre[class*="language-"] {
+.theme-light code[class*="language-"],
+.theme-light pre[class*="language-"],
+.theme-dark code[class*="language-"],
+.theme-dark pre[class*="language-"] {
   background-color: var(--code-block-background);
 }
 
@@ -680,9 +686,9 @@ div.markdown-preview-view {
   letter-spacing: 0.05em;
 }
 
-.cm-s-obsidian span.cm-hashtag-begin, 
-  .cm-s-obsidian span.cm-hashtag-end,
-  a.tag {
+.cm-s-obsidian span.cm-hashtag-begin,
+.cm-s-obsidian span.cm-hashtag-end,
+a.tag {
   /* background-color: var(--background-tag); */
   color: var(--text-header);
   font-family: var(--font-family-editor);
@@ -761,7 +767,7 @@ a.tag {
 }
 
 .nav-file-title-content.is-being-renamed,
-  .nav-folder-title-content.is-being-renamed {
+.nav-folder-title-content.is-being-renamed {
   border-color: var(--interactive-accent);
 }
 
@@ -787,7 +793,7 @@ a.tag {
   padding-right: unset;
 }
 
-.markdown-preview-view .markdown-embed-content > .markdown-preview-view {
+.markdown-preview-view .markdown-embed-content>.markdown-preview-view {
   max-height: unset;
 }
 
@@ -808,7 +814,7 @@ a.tag {
 /* fix graph text */
 
 .theme-light .graph-view {
-  --text-normal:  rgb(127, 127, 127);
+  --text-normal: rgb(127, 127, 127);
 }
 
 .theme-dark .graph-view {
@@ -897,4 +903,3 @@ a.tag {
 
 @media (min-width: 1536px) {
 }
-  

@@ -201,7 +201,7 @@
 
 .side-dock.mod-left {
     @apply border-r;
-    border-color: 1px solid var(--background-secondary-border);
+    border-color: var(--background-secondary-border);
 }
 
 
@@ -238,9 +238,7 @@ div.markdown-preview-view {
 /* Coloring the list bullets/numbers */
 
 .cm-s-obsidian span.cm-formatting-list {
-    @apply text-red-700;
-    font-size: 0.85em;
-    font-weight: 500;
+    @apply text-red-700 text-sm font-medium;
     font-family: var(--font-monospace);
 }
 
@@ -248,11 +246,7 @@ div.markdown-preview-view {
 /* Editor view - task list, color and veritcal align */
 
 .cm-s-obsidian span.cm-formatting-task {
-    @apply text-red-700;
-    font-size: 0.85em;
-    font-weight: 500;
-    position: relative;
-    top: -0.12em;
+    @apply text-red-700 text-sm font-medium relative -top-0.5;
 }
 
 
