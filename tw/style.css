@@ -338,7 +338,7 @@ div.markdown-preview-view {
 /* Code block left and right padding */
 
 .cm-s-obsidian pre.HyperMD-codeblock {
-    @apply py-0 px-8;
+    @apply py-0 px-4;
     color: var(--text-inline-code);
 }
 
@@ -346,14 +346,14 @@ div.markdown-preview-view {
 /* Code block top padding */
 
 .cm-s-obsidian pre.HyperMD-codeblock-begin {
-    @apply pt-8;
+    @apply pt-1 font-semibold text-gray-600;
 }
 
 
 /* Code block bottom padding */
 
 .cm-s-obsidian pre.HyperMD-codeblock-end {
-    @apply pt-8;
+    @apply pt-1 font-semibold text-gray-600;
 }
 
 
