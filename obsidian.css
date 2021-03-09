@@ -630,21 +630,27 @@ div.markdown-preview-view {
 .cm-s-obsidian pre.HyperMD-codeblock {
   padding-top: 0px;
   padding-bottom: 0px;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: var(--text-inline-code);
 }
 
 /* Code block top padding */
 
 .cm-s-obsidian pre.HyperMD-codeblock-begin {
-  padding-top: 2rem;
+  font-weight: 600;
+  padding-top: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
 /* Code block bottom padding */
 
 .cm-s-obsidian pre.HyperMD-codeblock-end {
-  padding-top: 2rem;
+  font-weight: 600;
+  padding-top: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(75, 85, 99, var(--tw-text-opacity));
 }
 
 /* Code block left and right border colors */
